@@ -120,8 +120,8 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
-
+# ALLOWED_HOSTS=['192.168.1.30','192.168.1.25','127.0.0.1']
+ALLOWED_HOSTS=['*']
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
@@ -133,6 +133,6 @@ MEDIA_URL = '/media/'
 
 # 添加Cors配置
 # 1. 设置白名单
-CORS_ORIGIN_WHITELIST = ('http://127.0.0.1:8080',)
+CORS_ORIGIN_WHITELIST = ('http://127.0.0.1:8080','http://192.168.1.114:8090','http://192.168.1.114','http://58.250.86.2:8090','http://wl.hagonne.com:8090','http://58.250.86.2','http://wl.hagonne.com')
 # 2. 是指Cors Cookie
 CORS_ALLOW_CREDENTIALS = True

@@ -19,7 +19,7 @@ class Device(models.Model):
 class Test2(models.Model):
     device_name = models.CharField(max_length=32)
     event_time = models.IntegerField()
-    event_date = models.DateField()
+    event_date = models.DateTimeField()
     product_key = models.ForeignKey('Product',to_field='productkey',on_delete=models.CASCADE)
     CurrentTemperature = models.FloatField()
     CurrentHumidity = models.FloatField()
